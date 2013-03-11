@@ -87,6 +87,7 @@ void NSCFInitialize (void)
 - (void) dealloc
 {
   GSRuntimeDeallocateInstance (self);
+  [super dealloc];
 }
 
 - (id) retain
