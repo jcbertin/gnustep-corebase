@@ -458,6 +458,8 @@ CFRunLoopAddSource_nolock (CFRunLoopRef rl, CFRunLoopSourceRef source,
     sources = ctxt->sources0;
   else if (source->_context.version == 1)
     sources = ctxt->sources1;
+  else
+    return;
   CFSetAddValue (sources, source);
 }
 

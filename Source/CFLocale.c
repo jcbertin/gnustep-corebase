@@ -334,7 +334,7 @@ CFLocaleCopyKeyword (CFLocaleRef loc, const void *context)
   char value[BUFFER_SIZE];
   UErrorCode err = U_ZERO_ERROR;
   
-  if (context == (const void*)ICU_CALENDAR_KEY)
+  if (context == ICU_CALENDAR_KEY)
     {
       CFCalendarRef cal;
       
